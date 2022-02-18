@@ -48,3 +48,20 @@ def caracola(data):
 		          print(f"Awa k suba")
 		        except:
 		          print(f"k suba")
+
+@client.event("on_text_message")
+def caracola(data):
+	if data.comId==6872133:
+		msg_1 = data.message.content
+		command = msg_1.split(' ')
+		index = command[1]
+		purple = command[2]
+		command = command[0]
+		if subclient.get_chat_threads().title!=None and command=='!':
+		    if index.lower()=="id":
+		        try:
+		        	axa = client.get_from_code(purple).objectId
+		        	subclient.send_message(chatId=data.message.chatId, message="UID:" + purple)
+		        	print(f"yeah glow")
+		        except:
+		        	print(f"no brah")
