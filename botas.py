@@ -60,8 +60,8 @@ def caracola(data):
 		if subclient.get_chat_threads().title!=None and command=='!':
 		    if index.lower()=="id":
 		        try:
-		        	axa = client.get_from_code(purple).objectId
-		        	subclient.send_message(chatId=data.message.chatId, message="UID:" + purple)
+		        	axa = client.get_from_code(purple[24:29]).objectId
+		        	subclient.send_message(chatId=data.message.chatId, message="UID:" + axa)
 		        	print(f"yeah glow")
 		        except:
 		        	print(f"no brah")
