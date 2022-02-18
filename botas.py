@@ -35,6 +35,7 @@ def carala(data):
 		          subclient.send_message(chatId=data.message.chatId, message="" + elec, file=regex, fileType="image", embedTitle="@" + data.message.author.nickname)
 		          print(f"Carta sacada por {data.message.author.nickname}")
 		        except:
+		          subclient.send_message(chatId=data.message.chatId, message="Lo sentimos, comando exclusivo para el staff :)")
 		          print(f"Pues no funciono, ntp")
 
 @client.event("on_text_message")
