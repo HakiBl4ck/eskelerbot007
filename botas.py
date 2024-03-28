@@ -3,8 +3,8 @@ import random
 import json
 import sqlite3
 
-email= "asterixyt@yahoo.com"
-password= "Volcan1000"
+email= "***************"
+password= "***"
 comid= 6872133
 chatid= "e2a9bb4b-69bf-4c1c-8418-d3e753b4daf3"
 client=amino.Client()
